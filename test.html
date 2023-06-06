@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>الصفحة الرئيسية</title>
+  <style>
+    /* CSS لتنسيق الصفحة */
+    body {
+      text-align: center;
+      padding-top: 100px;
+      font-family: Arial, sans-serif;
+      background-color: #111111;
+      color: #ffffff;
+      cursor: default;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 40px;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .button:hover {
+      background-color: #45a049;
+      transform: scale(1.1);
+    }
+    .button:active {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+      transform: translateY(2px);
+    }
+    .button:focus {
+      outline: none;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      document.body.classList.add('loaded');
+      document.getElementById('welcome-button').addEventListener('mouseover', function() {
+        this.style.cursor = 'pointer';
+      });
+    }
+  </script>
+</head>
+<body>
+  <h1>مرحبًا بك في الصفحة الرئيسية</h1>
+  <p>هذا النص لغرض العرض فقط.</p>
+  <a href="project-description.html" class="button">المشروع</a>
+  <a href="creator.html" id="welcome-button" class="button">ترحيب</a>
+</body>
+</html>
